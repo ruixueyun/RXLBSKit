@@ -43,5 +43,5 @@ TODO: Add long description of the pod here.
   
   s.platform = :ios, '9.0'
   s.dependency 'AMapSearch'
-  s.dependency 'AMapLocation'
+  s.dependency 'AMapLocation', '~> 2.6.8'
 end
