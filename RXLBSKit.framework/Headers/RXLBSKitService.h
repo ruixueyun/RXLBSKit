@@ -23,6 +23,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)registeAMWithAppkey:(NSString *)appkey;
 
 /**
+ * 判断定位权限
+ * @param YES有定位权限，NO没有定位权限
+ */
+- (BOOL)enableLocationAuthorizationStatus;
+
+/**
  * 获取位置信息
  */
 - (void)getLocationInfo:(void(^)(RXLBSModel *location, NSError *error))complete;
