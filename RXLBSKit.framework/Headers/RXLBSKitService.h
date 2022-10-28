@@ -24,9 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 判断定位权限
- * @param YES有定位权限，NO没有定位权限
+ * @return YES有定位权限，NO没有定位权限
  */
 - (BOOL)enableLocationAuthorizationStatus;
+
+/**
+ * 请求定位权限
+ */
+- (void)requestLocationAuthorization:(void(^)(BOOL authorization))complete;
 
 /**
  * 获取位置信息
