@@ -38,6 +38,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)getLocationInfo:(void(^)(RXLBSModel *location, NSError *error))complete;
 
+/**
+ * 是否允许后台定位  默认为NO不开启后台定位
+ */
+- (void)setAllowsBackgroundLocationUpdates:(BOOL)allow;
+
+/**
+ * 设置定位超时时间  默认为2秒
+ */
+- (void)setLocationTimeout;
+
 @end
 
 NS_ASSUME_NONNULL_END
