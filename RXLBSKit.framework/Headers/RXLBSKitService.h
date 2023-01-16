@@ -46,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 设置定位超时时间  默认为2秒
  */
-- (void)setLocationTimeout;
+- (void)setLocationTimeout:(NSInteger)locationTimeout;
 
 @end
 
